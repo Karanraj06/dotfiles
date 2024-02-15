@@ -1,0 +1,8 @@
+[user]
+	email = karanrajmehta06@gmail.com
+	name = Karanraj Mehta
+	signingkey = /Users/karanraj/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

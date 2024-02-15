@@ -1,0 +1,42 @@
+format = """
+$python\
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$line_break\
+$character"""
+
+# Python Virtualenv
+[python]
+format = '[$virtualenv]($style) '
+style = 'yellow'
+
+[os]
+format = '$symbol '
+disabled = false
+
+[os.symbols]
+Macos = '[󰀵](bold white)'
+
+[username]
+format = '[$user]($style) '
+style_user = 'bold green'
+disabled = false
+show_always = true
+
+[hostname]
+format = '[$hostname]($style) '
+style = 'bold green'
+
+# Working Directory
+[directory]
+format = '[$path]($style) '
+style = 'bold purple'
+fish_style_pwd_dir_length = 1
+
+# Git Branch
+[git_branch]
+format = '[git:\([$branch](bold yellow)\)]($style)'
+style = 'bold green'
