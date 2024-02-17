@@ -73,7 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     zsh-autosuggestions
-	vi-mode
+    vi-mode
 )
 
 VI_MODE_SET_CURSOR=true
