@@ -1,6 +1,5 @@
 format = """
 $python\
-$os\
 $username\
 $hostname\
 $directory\
@@ -12,13 +11,6 @@ $character"""
 [python]
 format = '[$virtualenv]($style) '
 style = 'yellow'
-
-[os]
-format = '$symbol '
-disabled = false
-
-[os.symbols]
-Macos = '[󰀵](bold white)'
 
 [username]
 format = '[$user]($style) '

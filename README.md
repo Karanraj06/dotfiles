@@ -8,10 +8,6 @@ Ensure you have the following installed on your system
 
 ### Git
 
-```
-xcode-select --install
-```
-
 ### Stow
 
 ```
@@ -32,9 +28,3 @@ then use GNU stow to create symlinks
 ```
 stow .
 ```
-
-## To-do
-
-- [ ] Add Ansible automation scripts (test in Docker container)
-
-- [ ] Add Brewfile

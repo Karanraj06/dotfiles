@@ -70,11 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    zsh-autosuggestions
-    vi-mode
-)
+plugins=(git zsh-autosuggestions vi-mode)
 
 VI_MODE_SET_CURSOR=true
 
@@ -108,16 +104,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-bindkey ^f fzf-cd-widget
-
 # bun completions
 [ -s "/Users/karanraj/.bun/_bun" ] && source "/Users/karanraj/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+bindkey ^f fzf-cd-widget
 
 eval "$(starship init zsh)"
 
