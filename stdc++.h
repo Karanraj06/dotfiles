@@ -91,6 +91,27 @@
 #include <valarray>
 #include <vector>
 
+#include <array>
+#include <atomic>
+#include <chrono>
+#include <codecvt>
+#include <condition_variable>
+#include <forward_list>
+#include <future>
+#include <initializer_list>
+#include <mutex>
+#include <random>
+#include <ratio>
+#include <regex>
+#include <scoped_allocator>
+#include <system_error>
+#include <thread>
+#include <tuple>
+#include <type_traits>
+#include <typeindex>
+#include <unordered_map>
+#include <unordered_set>
+
 #if __cplusplus >= 201103L
 #include <array>
 #include <atomic>
@@ -98,8 +119,8 @@
 #include <ratio>
 #include <scoped_allocator>
 #include <tuple>
-#include <typeindex>
 #include <type_traits>
+#include <typeindex>
 #endif
 
 #if __cplusplus >= 201402L
@@ -109,8 +130,8 @@
 #include <any>
 // #include <execution>
 #include <optional>
-#include <variant>
 #include <string_view>
+#include <variant>
 #endif
 
 #if __cplusplus >= 202002L
@@ -119,8 +140,8 @@
 #include <concepts>
 #include <numbers>
 #include <ranges>
-#include <span>
 #include <source_location>
+#include <span>
 #include <version>
 #endif
 
@@ -128,7 +149,7 @@
 #include <expected>
 #include <stdatomic.h>
 #if __cpp_impl_coroutine
-# include <coroutine>
+#include <coroutine>
 #endif
 #endif
 
@@ -166,29 +187,6 @@
 #include <cuchar>
 #endif
 
-#if __cplusplus >= 201103L
-#include <array>
-#include <atomic>
-#include <chrono>
-#include <codecvt>
-#include <condition_variable>
-#include <forward_list>
-#include <future>
-#include <initializer_list>
-#include <mutex>
-#include <random>
-#include <ratio>
-#include <regex>
-#include <scoped_allocator>
-#include <system_error>
-#include <thread>
-#include <tuple>
-#include <typeindex>
-#include <type_traits>
-#include <unordered_map>
-#include <unordered_set>
-#endif
-
 #if __cplusplus >= 201402L
 #include <shared_mutex>
 #endif
@@ -198,8 +196,8 @@
 #include <charconv>
 // #include <execution>
 #include <filesystem>
-#include <optional>
 #include <memory_resource>
+#include <optional>
 #include <variant>
 #endif
 
@@ -212,10 +210,10 @@
 #include <latch>
 #include <numbers>
 #include <ranges>
-#include <span>
-#include <stop_token>
 #include <semaphore>
 #include <source_location>
+#include <span>
+#include <stop_token>
 #include <syncstream>
 #include <version>
 #endif
@@ -226,7 +224,7 @@
 #include <print>
 #include <spanstream>
 #if __has_include(<stacktrace>)
-# include <stacktrace>
+#include <stacktrace>
 #endif
 #include <stdatomic.h>
 #include <stdfloat>
